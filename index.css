@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+* Header CSS code & notes
+*/
+
+
+@media only screen and (min-device-width : 640px) and (max-device-width : 1024px) {
+	header, li, li a{
+	float: none;
+	width: 100%;
+	}
+}
+
+
+header{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin:0px;
+}
+
+div#navHeader{
+    width: 100%;
+	height: 100%;
+}
+
+/* For ul CSS component
+	* position: fixed; top: 0; : Makes the navigation bar stay at the top of the page, even when the user scrolls.
+	* position: fixed; bottom: 0; : Makes the navigation bar stay at the bottom of the page, even when the user scrols the page.
+	* NOTE: Fixed postion might not work properly on mobile devices.
+	* position: fixed;
+	* top: 0; 
+	* border: 1px solid #e7e7e7; & background-color: #f3f3f3; : Adds a gray horizontal navigation bar with a thin gray border.
+	* position: -webkit-sticky; /* Safari */ /* position: sticky; top: 0; : A sticky element toggles between relative and fixed, depending *  on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place *  (like position:fixed).
+*/
+ul {
+    position: flex;
+	top: 0; 
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+	background-color: #ababab;
+	width: 100%;
+}
+
+/* Used for li CSS component
+  * display: block; <--- Used to for testing out how the horizontal nav bar looks
+  * display: inline; <--- Used to for testing out how the horizontal nav bar looks
+*/
+li  {
+	float: left;
+	font-size: 18px;
+}
+
+
+/* Used for border-right CSS component 
+	* background-color: #ababab Adds a gray right border to all list items, except the last item (last-child) 
+*/
+li a {
+	display: block;
+	padding: 15px 30px;
+	color: #F9EFF1;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ababab;
+	border-right: 2px solid #bbb;
+}
+
+li:first-child{
+	padding-left: 0px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+/* Used for background-color CSS component
+	* Changes the link color to  #000000 (black) on hover
+*/
+li a:hover {
+  background-color: #000000;
+}
+
+li a:hover:not(.active) {
+  background-color: #000000;
+}
+
+/* 
+	* The "active" class shows the current link to let the user know which page he/she is on .
+*/
+.active {
+	background-color: #8d2663;
+
+}
+
+.videos, .resume, .about, .contact {
+
+}
+
+/* 
+* Body CSS code and notes
+*/
+@media only screen and (min-device-width : 640px) and (max-device-width : 1024px) {
+	body, div#homeBody{
+		margin:0px;
+		padding: 0px;	
+		width: 100%;
+	}
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding: 0px;	
+}
+div#homeBody{
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    background-color: #2d2d2d;
+    background-size: 100%;
+    width: 100%;
+    height: 1500px;
+}
+
+.sectTitle {
+	padding: 10px 0px 10px 0px;
+	margin-left: 10px;
+	position: flex;
+	width: 100%;
+}
+
+h1#h1Title{
+	color: #F9EFF1;
+    font-size: 70px;
+	font-size-adjust: auto;
+    text-align: left;
+	
+}
+
+.sectAbout {
+	padding: 10px;
+	position: flex;
+	width: 100%;
+}
+
+h2#h2About{
+	color: #F9EFF1;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-size-adjust: auto;
+}
+
+p#pAbout{
+	color: #F9EFF1;
+	padding-left: 6px;
+	text-align: center;
+	font-size: 18px;
+	font-size-adjust: auto;
+}
+
+
+h2#h2DemoReel {
+	padding-left: 8px;
+	padding-bottom: 10px;
+	padding-top: 30px;
+	font-size: 30px;
+	color: #F9EFF1;
+	text-align: center;
+}
+
+p#pDemoReel {
+	text-align: center;
+   	padding-top: 20px;
+	color: #F9EFF1;
+}
+
+
+
+iframe{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+}
+p a{
+	text-decoration: none; /* This does not remove the line underneath it */
+	text-decoration-color: #F9EFF1; /* This does not change the text color */
+	font-size: 18px;
+	color: #F9EFF1;
+	padding-left: 6px;
+}
+
+
+div#divDemoReel
+{
+	color: #F9EFF1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* 
+* Footer CSS code and notes
+*/
+@media only screen and (min-device-width : 640px) and (max-device-width : 1024px) {
+	footer, div#div_footer{
+			width: 100%;
+		}
+}
+
+footer{
+		width: 100%;
+		height: 100%;
+		margin:0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+div#div_footer {
+	width: 100%;
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+table#tableFooter {
+	background-color: #ababab;
+	width: 100%;
+	margin: auto;
+	border-collapse: collapse
+}
+
+.home_footer {
+	font-size: 18px;
+	text-decoration: none;
+	color: #F9EFF1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.videos_footer{
+	font-size: 18px;
+	text-decoration: none;
+	color: #F9EFF1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.resume_footer{
+	font-size: 18px;
+	text-decoration: none;
+	color: #F9EFF1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.about_footer {
+	font-size: 18px;
+	text-decoration: none;
+	color: #F9EFF1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.contact_footer {
+	font-size: 18px;
+	text-decoration: none;
+	color: #F9EFF1;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.misc_footer {
+	font-size: 18px;
+	text-decoration: none;
+	color: #F9EFF1;
+	padding-left: 50px;
+	padding-right: 50px;
+}

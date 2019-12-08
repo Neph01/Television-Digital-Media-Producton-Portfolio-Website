@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Misc. Project Requirements</title>
+</head>
+
+<link rel= "stylesheet" href="../CSS/misc.css">
+	
+<body onLoad="addFood_list()">
+	<script src="../JavaScript/misc.js"></script>
+
+<div id = "gradient">
+	<form name="drop_list">		
+		<select  name="Food_list">
+			<option value="food">List of Food</option>
+		</select>
+	</form>
+</div>
+		<br>
+<div id= "divColor">
+	<p>What color do you want?</p>
+	<br><br>
+	
+	<form name="color" method="post" action="">
+	<br>
+		
+	<input type="checkbox" name="color" value="checkbox" onClick="changeColor('1')">Red
+	<br>
+		
+	<input type="checkbox" name="color" value="checkbox" onClick="changeColor('2')">Blue
+	<br>
+	
+	<input type="checkbox" name="color" value="checkbox" onClick="changeColor('3')">Green
+		<br>
+	</form>
+	</div>
+	<footer>
+	<div id = "div_footer">
+		<table id = "tableFooter" border="0" align="center" height = "100">
+  			<tbody>
+   				<tr>
+      				<th scope="col" id = "Home Page Footer Link"><a href="../HTML/index.html" class = "home_footer">Home</a></th>
+      				<th scope="col" id = "Videos Page Footer Link"><a href="../HTML/video.html" class="videos_footer">Videos</a></th>
+      				<th scope="col" id = "Resume Page Footer Link"><a href="../HTML/resume.html" class="resume_footer">Resume</a></th>
+      				<th scope="col" id = "About Page Footer Link"><a href="../HTML/about.html" class="about_footer">About</a></th>
+      				<th scope="col" id = "Contact Page Footer Link"><a href="../HTML/contact.html" class="contact_footer">Contact</a></th>
+      				<th scope="col" id = "Miscellaneous Page Footer Link"><a href="../HTML/misc.html" class="misc_footer">Misc.</a></th>
+    			</tr>
+  			</tbody>
+		</table>
+  </div>
+</footer>
+</body>
+</html>

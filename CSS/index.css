@@ -181,28 +181,27 @@ p#pDemoReel {
    padding-top: 20px;
 }
 
-a#DemoReel{
-    text-decoration-line: none;
-    color: #F9EFF1;
-    font-size: 18px;
-    
-}
 
-video {
-	text-align: center;
+
+iframe{
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
 	margin-top: 0px;
 }
-
-p#h2DemoReel {
-	font-size: 20px;
-	color: #F9EFF1;
-	padding-left: 6px;
-	text-align: center;
+p a{
 	text-decoration: none; /* This does not remove the line underneath it */
 	text-decoration-color: #F9EFF1; /* This does not change the text color */
+	font-size: 18px;
+	color: #F9EFF1;
+	padding-left: 6px;
+}
+
+
+div#divDemoReel
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* 

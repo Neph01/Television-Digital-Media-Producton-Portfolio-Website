@@ -178,7 +178,8 @@ h2#h2DemoReel {
 
 p#pDemoReel {
 	text-align: center;
-   padding-top: 20px;
+   	padding-top: 20px;
+	color: #F9EFF1;
 }
 
 
@@ -199,6 +200,7 @@ p a{
 
 div#divDemoReel
 {
+	color: #F9EFF1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

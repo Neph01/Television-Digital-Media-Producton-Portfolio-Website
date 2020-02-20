@@ -4,12 +4,66 @@
 /*
 * Header CSS code & notes
 */
-@media only screen and (min-device-width : 640px) and (max-device-width : 1024px) {
-	header, li, li a{
+@media screen and (min-width: 1023px) and (max-width: 5000px) {
+	header, div#navHeader{
 	float: none;
 	width: 100%;
 	}
+	body, div#homeBody{
+		margin:0px;
+		padding: 0px;	
+		width: 100%; 
+	}
+	footer, div#div_footer{
+		width: 100%;
+	}
 }
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+	header, div#navHeader{
+		float: none;
+		width: 100%;
+	}
+	body, div#homeBody{
+		margin:0px;
+		padding: 0px;	
+		width: 100%; 
+	}
+	footer, div#div_footer{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 424px) and (max-width: 768px) {
+	header, div#navHeader{
+		float: none;
+		width: 100%;
+	}
+	body, div#homeBody{
+		margin:0px;
+		padding: 0px;	
+		width: 100%; 
+	}
+	footer, div#div_footer{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 425px) {
+	header, div#navHeader{
+		float: none;
+		width: 100%;
+	}
+	body, div#homeBody{
+		margin:0px;
+		padding: 0px;	
+		width: 100%; 
+	}
+	footer, div#div_footer{
+		width: 100%;
+	}
+}
+
 
 header{
 	font-family: Arial, Helvetica, sans-serif;
@@ -102,11 +156,6 @@ li a:hover:not(.active) {
 /* 
 * Body CSS code and notes
 */
-@media only screen and (min-device-width : 640px) and (max-device-width : 1024px) {
-	body, div#homeBody{
-		width:100%;
-	}
-}
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -194,11 +243,6 @@ a#email_link1{
 /* 
 * Footer CSS code and notes
 */
-@media only screen and (min-device-width : 640px) and (max-device-width : 1024px) {
-	footer,  div#div_footer{
-		width: 100%;
-	}
-}
 	
 footer{
 		width: 100%;
